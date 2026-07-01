@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!-- Author: Dragana Acamovic 000833869-->
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<!--bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!--java files-->
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+	</script>
+	<script defer src="javascripta4.js">
+	</script>
+	<!--css style-->
+	<link href="cssa4.css" rel="stylesheet">
+
+	<title>Assignment 4</title>
+</head>
+
+<body>
+
+	<header class="container-fluid">
+		<div class="container">
+			<h1 class="text-center">&#128045; Mousin' Around &#128045;</h1>
+		</div>
+	</header>
+
+    <div class="gameZone">
+
+        <div class="row">
+            <div class="col-md-3">
+                    <button id="button1" class="btn btn-dark mb-3 w-100" onclick="startGame()">START</button>
+            </div>
+
+            <div class="col-md-3">
+                    <span id="scoreboard" class="mb-3">
+                        SCORE: <span id="score">0</span>
+                    </span>
+            </div>
+            <div class="col-md-3">
+                <span id="highscoreboard" class="mb-3">
+                    HIGHSCORE: <span id="highscore">0</span>
+                </span>
+            </div>
+
+            <div class="col-md-3">
+                    <button id="button2" class="btn btn-dark mb-3 w-100" onclick="Reset()">RESET</button>
+            </div>
+        </div>
+    </div>
+     
+
+        <svg id="board" width="800" height="500" style="background-color:rgb(255, 218, 137)">
+        </svg>
+
+        <div class="row">
+                <div class="col-md">
+                    <form id="form">
+                        <input type="radio" id="cb_easy" class="checkbox" value="easy" >
+                        <label for="cb_easy">Easy</label>
+
+                        <input type="radio" id="cb_medium" class="checkbox" value="medium">
+                        <label for="cb_medium">Medium</label>
+
+                        <input type="radio" id="cb_hard" class="checkbox" value="hard">
+                        <label for="cb_hard">Hard</label>
+
+                        <button type="submit" class="btn btn-dark mb-3">Enter</button>
+                    </form>
+                </div>
+        </div>
+
+        <div class="instructions">
+            <h2> Instructions! </h2>
+                <p>You're a mouse on the hunt for cheese</p>
+                <p>Click on the cheese before they disappear to gain points</p>
+                <p>Lose points by missing out on cheese</p>
+                <p>Don't click on the cats or the game will end!</p>
+        </div>
+
+
+	<footer>
+		<p>&copy; 2024 Dragana Acamovic 000833869</p>
+	</footer>
+
+</body>
+
+</html>
+
